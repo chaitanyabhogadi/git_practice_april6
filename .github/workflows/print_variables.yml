@@ -1,0 +1,16 @@
+name: print variables
+on:
+    workflow_dispatch:
+env: 
+    WORKFLOW_MESSAGE: hello from workflow yaml
+jobs:
+    print_vars:
+        runs-on: ubuntu-latest
+        environment: dev
+        steps:
+            - name: print variables
+              run:
+                echo "LEARNINGDEVOPS= ${{ vars.LEARNINGDEVOPS }}"
+                echo "REPO_MESSAGE= ${{ vars.REPO_MESSAGE }}"
+                echo "DEV_ENV_MSG= ${{vars.DEV_ENV_MSG }}"
+                echo "WORKFLOW_MESSAGE= $WORKFLOW_MESSAGE"
