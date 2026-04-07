@@ -13,4 +13,4 @@ jobs:
                 echo "LEARNINGDEVOPS= ${{ vars.LEARNINGDEVOPS }}"
                 echo "REPO_MESSAGE= ${{ vars.REPO_MESSAGE }}"
                 echo "DEV_ENV_MSG= ${{vars.DEV_ENV_MSG }}"
-                echo "WORKFLOW_MESSAGE= $WORKFLOW_MESSAGE"
+                echo "WORKFLOW_MESSAGE = $WORKFLOW_MESSAGE "
