@@ -15,9 +15,8 @@ jobs:
                 echo "DEV_ENV_MSG= ${{ vars.DEV_ENV_MSG }}"
                 echo "WORKFLOW_MESSAGE= $WORKFLOW_MESSAGE"
             - name: print github context
-              run: echo " ${{ github }} "
+              run: echo " ${{ toJson(github) }} "
             - name: print env context
-              run: echo " ${{ env }} "
+              run: echo " ${{ toJson(env) }} "
             - name: print vars context
-              run: echo " ${{ vars }}"
-              
+              run: echo " ${{ toJson(vars) }}"
