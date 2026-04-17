@@ -14,3 +14,10 @@ jobs:
                 echo "REPO_MESSAGE= ${{ vars.REPO_MESSAGE }}"
                 echo "DEV_ENV_MSG= ${{ vars.DEV_ENV_MSG }}"
                 echo "WORKFLOW_MESSAGE= $WORKFLOW_MESSAGE"
+            - name: print github context
+              run: echo " ${{ github }} "
+            - name: print env context
+              run: echo " ${{ env }} "
+            - name: print vars context
+              run: echo " ${{ vars }}"
+              
